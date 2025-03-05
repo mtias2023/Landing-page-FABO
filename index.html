@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FABO - Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- favicon -->
+    <link rel="icon" href="img/icono-universo.png">
+
+</head>
+
+<body class="bg-gray-100">
+    <!-- Barra de navegación -->
+    <header class="bg-gray-100 py-4 w-full">
+        <div class="max-w-screen-xl mx-auto flex justify-between items-center px-6">
+            <!-- Logo -->
+            <div class="flex items-center">
+                <img src="img/logo.png" alt="FABO Logo" class="h-10">
+            </div>
+
+            <!-- Enlaces de navegación (ocultos en tablets y móviles) -->
+            <nav class="hidden lg:flex gap-8">
+                <a href="#inicio" class="hover:text-cyan-500">Inicio</a>
+                <a href="#deportes" class="hover:text-cyan-500">Deportes</a>
+                <a href="#beneficios" class="hover:text-cyan-500">Beneficios</a>
+                <a href="#funcionalidades" class="hover:text-cyan-500">Funcionalidades</a>
+                <a href="#testimonios" class="hover:text-cyan-500">Testimonios</a>
+                <a href="#preguntas-frecuentes" class="hover:text-cyan-500">Preguntas Frecuentes</a>
+            </nav>
+
+            <!-- Botón de "Descargar" (oculto en tablets y móviles) -->
+            <a href="https://fabo.vercel.app" target="_blank"
+                class="bg-cyan-500 text-white py-2 px-6 rounded-lg hover:bg-cyan-400 hidden lg:block">Descargar</a>
+
+            <!-- Menú hamburguesa (visible en tablets y móviles) -->
+            <button class="lg:hidden text-black" id="menu-toggle">
+                <span class="material-icons">menu</span>
+            </button>
+        </div>
+
+        <!-- Menú desplegable para móviles y tablets -->
+        <nav id="mobile-menu" class="hidden bg-gray-100 flex flex-col items-start gap-6 py-4 px-6">
+            <a href="#inicio" class="hover:text-cyan-500 text-left">Inicio</a>
+            <a href="#deportes" class="hover:text-cyan-500 text-left">Deportes</a>
+            <a href="#beneficios" class="hover:text-cyan-500 text-left">Beneficios</a>
+            <a href="#funcionalidades" class="hover:text-cyan-500 text-left">Funcionalidades</a>
+            <a href="#testimonios" class="hover:text-cyan-500 text-left">Testimonios</a>
+            <a href="#preguntas-frecuentes" class="hover:text-cyan-500 text-left">Preguntas Frecuentes</a>
+            <a href="https://fabo.vercel.app" target="_blank"
+                class="bg-cyan-500 text-white py-2 px-6 rounded-lg text-left">Descargar</a>
+        </nav>
+    </header>
+    <main>
+        <!-- Sección Inicio -->
+        <section class="bg-cover bg-center text-white py-16 px-8 min-h-[650px] md:min-h-[650px]" id="inicio"
+            style="background-color: #22d3ee">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-8">
+                <!-- Columna Izquierda -->
+                <div>
+                    <p class="text-xl mb-6">“Tu deporte, tu equipo, en un solo lugar”</p>
+                    <h1 class="text-4xl font-bold mb-4 leading-tight">¡Unite a la app que<br> revolucionará el deporte!
+                    </h1>
+                    <p class="text-xl mb-6">Acá encontrarás Fútbol, Básquet y Tenis al alcance de tu mano. Conéctate,
+                        crea
+                        partidos y juega cuando quieras.</p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="https://fabo.vercel.app" target="_blank"
+                            class="bg-blue-700 text-white py-2 px-6 rounded-lg hover:bg-blue-600 transition">
+                            Descargar ahora
+                        </a>
+                        <a href="#funcionalidades"
+                            class="bg-transparent border-2 border-white text-white py-2 px-6 rounded-lg hover:bg-white hover:text-cyan-500 transition">
+                            Empieza Ahora
+                        </a>
+                    </div>
+                </div>
+                <!-- Columna Derecha -->
+                <div class="relative flex justify-center items-center h-auto md:h-[500px]">
+                    <!-- Imagen del Círculo -->
+                    <img src="img/circulo1.png" alt="Círculo decorativo"
+                        class="absolute max-w-full h-auto hidden md:block"
+                        style="bottom: -18%; left: 50%; transform: translateX(-50%);">
+
+                    <!-- Imagen Principal -->
+                    <img src="img/mesii.png" alt="Imagen principal" class="absolute max-w-full h-auto hidden md:block"
+                        style="bottom: -17.2%; left: 50%; transform: translateX(-50%);">
+                </div>
+            </div>
+        </section>
+        <!-- Sección de Deportes -->
+        <section class="py-16 px-8 bg-white" id="deportes">
+            <div class="max-w-6xl mx-auto text-center">
+                <h2 class="text-3xl font-semibold mb-12">Encuentra tu deporte <span
+                        class="text-cyan-400 text-3xl">favorito</span></h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-md border border-gray-200 flex flex-col items-center max-w-xs mx-auto">
+                        <img src="img/futbol-pelota.jpg" alt="Fútbol" class="w-32 h-32 object-cover rounded-full mb-4">
+                        <h3 class="text-xl text-cyan-400 font-semibold mb-2">Fútbol</h3>
+                        <p class="text-gray-600">Descarga la app y encuentra partidos cerca de ti.</p>
+                    </div>
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-md border border-gray-200 flex flex-col items-center max-w-xs mx-auto">
+                        <img src="img/basquet-pelota.jpg" alt="Básquet"
+                            class="w-32 h-32 object-cover rounded-full mb-4">
+                        <h3 class="text-xl text-cyan-400 font-semibold mb-2">Básquet</h3>
+                        <p class="text-gray-600">Únete a la comunidad y juega al básquet donde quieras.</p>
+                    </div>
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-md border border-gray-200 flex flex-col items-center max-w-xs mx-auto">
+                        <img src="img/tenis-pelota.jpg" alt="Tenis" class="w-32 h-32 object-cover rounded-full mb-4">
+                        <h3 class="text-xl text-cyan-400 font-semibold mb-2">Tenis</h3>
+                        <p class="text-gray-600">Reserva tu partido de tenis, ¡descarga FABO ahora!.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Sección de Beneficios -->
+        <section id="beneficios" class="bg-white py-16 px-8">
+            <div class="max-w-7xl mx-auto">
+                <!-- Título centrado -->
+                <h2 class="text-3xl font-semibold text-center mb-14">Beneficios principales de <span
+                        class="text-cyan-400 text-3xl">FABO</span></h2>
+                <!-- Contenedor de dos columnas -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-2 items-center">
+                    <!-- Imagen del celular -->
+                    <div class="flex justify-center mb-8 md:mb-0">
+                        <img src="img/pantalla-fabo.png" alt="Captura de la App"
+                            class="w-70 rounded-lg bg-transparent">
+                    </div>
+                    <!-- Lista de beneficios -->
+                    <div>
+                        <ul class="space-y-10">
+                            <!-- Beneficio 1 -->
+                            <li class="flex items-center gap-6">
+                                <div
+                                    class="hidden md:flex w-16 h-16 items-center justify-center bg-cyan-100 text-cyan-600 shadow-lg rounded-full text-2xl">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-lg text-cyan-400">Conecta con jugadores</h3>
+                                    <p class="text-gray-600">Encuentra personas que quieran jugar y únete a partidos de
+                                        tu deporte favorito.</p>
+                                </div>
+                            </li>
+                            <!-- Beneficio 2 -->
+                            <li class="flex items-center gap-6">
+                                <div
+                                    class="hidden md:flex w-16 h-16 items-center justify-center bg-cyan-100 text-cyan-600 shadow-lg rounded-full text-2xl">
+                                    <i class="fas fa-heartbeat"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-lg text-cyan-400">Ahorro y salud</h3>
+                                    <p class="text-gray-600">Mantente en forma y diviértete sin preocupaciones.</p>
+                                </div>
+                            </li>
+                            <!-- Beneficio 3 -->
+                            <li class="flex items-center gap-6">
+                                <div
+                                    class="hidden md:flex w-16 h-16 items-center justify-center bg-cyan-100 text-cyan-600 shadow-lg rounded-full text-2xl">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-lg text-cyan-400">Organiza tu tiempo</h3>
+                                    <p class="text-gray-600">Reserva y organiza partidos fácilmente desde la app sin
+                                        límite de tiempo.</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- Botón de llamada a la acción -->
+                        <div class="mt-14 flex justify-center">
+                            <a href="https://fabo.vercel.app/chat" target="_blank" class="bg-blue-700 text-white py-3 px-6 rounded-lg hover:bg-blue-600 transition-all">Conecta con jugadores</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Sección de Funcionalidades -->
+        <section id="funcionalidades" class="py-16 px-6 bg-cover bg-center bg-no-repeat w-full"
+            style="background-color: #22d3ee">
+            <div class="max-w-6xl mx-auto p-8">
+                <!-- Título centrado -->
+                <h2 class="text-3xl font-semibold text-white text-center mb-14">Funcionalidades de la App</h2>
+                <!-- Contenedor de dos columnas -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Columna izquierda -->
+                    <div class="space-y-6">
+                        <!-- Card 1 -->
+                        <div class="bg-white p-6 rounded-3xl shadow-lg">
+                            <div class="flex items-center gap-4">
+                                <span
+                                    class="flex items-center justify-center w-10 h-10 text-2xl font-bold text-white bg-cyan-400 rounded-full shadow-md">1</span>
+                                <h3 class="font-semibold text-lg text-cyan-400">Comunidad deportiva</h3>
+                            </div>
+                            <p class="text-gray-600 mt-2">Conéctate con otros apasionados del fútbol, básquet y tenis, y
+                                disfruta de tu deporte.</p>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="bg-white p-6 rounded-3xl shadow-lg">
+                            <div class="flex items-center gap-4">
+                                <span
+                                    class="flex items-center justify-center w-10 h-10 text-2xl font-bold text-white bg-cyan-400 rounded-full shadow-md">2</span>
+                                <h3 class="font-semibold text-lg text-cyan-400">Elegir deporte favorito</h3>
+                            </div>
+                            <p class="text-gray-600 mt-2">Selecciona fútbol, básquet o tenis y accede a contenido y
+                                partidos
+                                de ese deporte.</p>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="bg-white p-6 rounded-3xl shadow-lg">
+                            <div class="flex items-center gap-4">
+                                <span
+                                    class="flex items-center justify-center w-10 h-10 text-2xl font-bold text-white bg-cyan-400 rounded-full shadow-md">3</span>
+                                <h3 class="font-semibold text-lg text-cyan-400">Crear partidos</h3>
+                            </div>
+                            <p class="text-gray-600 mt-2">Organiza encuentros deportivos indicando lugar, fecha, hora y
+                                jugadores.</p>
+                        </div>
+                    </div>
+
+                    <!-- Columna derecha -->
+                    <div class="space-y-6">
+                        <!-- Card 4 -->
+                        <div class="bg-white p-6 rounded-3xl shadow-lg">
+                            <div class="flex items-center gap-4">
+                                <span
+                                    class="flex items-center justify-center w-10 h-10 text-2xl font-bold text-white bg-cyan-400 rounded-full shadow-md">4</span>
+                                <h3 class="font-semibold text-lg text-cyan-400">Unirse a partidos</h3>
+                            </div>
+                            <p class="text-gray-600 mt-2">Encuentra y participa en partidos cercanos según tu
+                                disponibilidad
+                                de tiempo.</p>
+                        </div>
+                        <!-- Card 5 -->
+                        <div class="bg-white p-6 rounded-3xl shadow-lg">
+                            <div class="flex items-center gap-4">
+                                <span
+                                    class="flex items-center justify-center w-10 h-10 text-2xl font-bold text-white bg-cyan-400 rounded-full shadow-md">5</span>
+                                <h3 class="font-semibold text-lg text-cyan-400">Chat y coordinación</h3>
+                            </div>
+                            <p class="text-gray-600 mt-2">Comunícate con jugadores para coordinar detalles del partido
+                                de
+                                forma sencilla.</p>
+                        </div>
+                        <!-- Card 6 -->
+                        <div class="bg-white p-6 rounded-3xl shadow-lg">
+                            <div class="flex items-center gap-4">
+                                <span
+                                    class="flex items-center justify-center w-10 h-10 text-2xl font-bold text-white bg-cyan-400 rounded-full shadow-md">6</span>
+                                <h3 class="font-semibold text-lg text-cyan-400">Estadísticas personales</h3>
+                            </div>
+                            <p class="text-gray-600 mt-2">Mira tu historial de partidos jugados, rendimiento y progreso
+                                en
+                                cada deporte.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Sección de Testimonios -->
+        <section id="testimonios" class="bg-white py-16 px-6">
+            <div class="max-w-6xl mx-auto">
+                <!-- Título centrado -->
+                <h2 class="text-3xl font-semibold text-center mb-12">Testimonios de nuestros usuarios sobre <span
+                        class="text-cyan-400 text-3xl">FABO</span></h2>
+
+                <!-- Carrusel de Testimonios -->
+                <div class="relative">
+                    <!-- Contenedor del carrusel -->
+                    <div id="carrusel" class="flex overflow-hidden space-x-6 snap-x snap-mandatory">
+                        <!-- Tarjeta 1 -->
+                        <div
+                            class="p-10 rounded-lg shadow-lg w-80 min-h-[380px] flex flex-col items-center justify-between flex-shrink-0 snap-center bg-white border border-gray-300 max-w-xs mx-auto">
+                            <div class="relative w-24 h-24 mb-4">
+                                <div class="absolute inset-0 bg-cyan-200 rounded-full"></div>
+                                <img src="img/herrera-futbol.png" alt="Usuario 1"
+                                    class="relative w-24 h-24 rounded-full">
+                            </div>
+                            <h3 class="text-lg text-cyan-400 font-semibold mb-2">Juan Pérez</h3>
+                            <p class="text-gray-600 text-sm text-center mb-4">"FABO ha cambiado la forma en que organizo
+                                mis partidos. ¡Es increíble!"</p>
+                            <div class="flex justify-center space-x-1 text-yellow-500">
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                            </div>
+                        </div>
+                        <!-- Tarjeta 2 -->
+                        <div
+                            class="p-10 rounded-lg shadow-lg w-80 min-h-[380px] flex flex-col items-center justify-between flex-shrink-0 snap-center bg-white border border-gray-300 max-w-xs mx-auto">
+                            <div class="relative w-24 h-24 mb-4">
+                                <div class="absolute inset-0 bg-cyan-200 rounded-full"></div>
+                                <img src="img/foto-basquet.png" alt="Usuario 2"
+                                    class="relative w-24x h-24x rounded-full">
+                            </div>
+                            <h3 class="text-lg text-cyan-400 font-semibold mb-2">Leandro Gómez</h3>
+                            <p class="text-gray-600 text-sm text-center mb-4">
+                                "Organizar torneos nunca había sido tan fácil. ¡100% recomendado!"
+                            </p>
+                            <div class="flex justify-center space-x-1 text-yellow-500">
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                            </div>
+                        </div>
+
+                        <!-- Tarjeta 3 -->
+                        <div
+                            class="p-10 rounded-lg shadow-lg w-80 min-h-[380px] flex flex-col items-center justify-between flex-shrink-0 snap-center bg-white border border-gray-300 max-w-xs mx-auto">
+                            <div class="relative w-24 h-24 mb-4">
+                                <div class="absolute inset-0 bg-cyan-200 rounded-full"></div>
+                                <img src="img/manu-basquet.png" alt="Usuario 3" class="relative w-24 h-24 rounded-full">
+                            </div>
+                            <h3 class="text-lg text-cyan-400 font-semibold mb-2">Carlos Ruiz</h3>
+                            <p class="text-gray-600 text-sm text-center mb-4">
+                                "La app perfecta para los amantes del deporte. ¡Gracias FABO!"
+                            </p>
+                            <div class="flex justify-center space-x-1 text-yellow-500">
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star_half</span>
+                            </div>
+                        </div>
+
+                        <!-- Tarjeta 4 -->
+                        <div
+                            class="p-10 rounded-lg shadow-lg w-80 min-h-[380px] flex flex-col items-center justify-between flex-shrink-0 snap-center bg-white border border-gray-300 max-w-xs mx-auto">
+                            <div class="relative w-24 h-24 mb-4">
+                                <div class="absolute inset-0 bg-cyan-200 rounded-full"></div>
+                                <img src="img/mujer2-perfil.png" alt="Usuario 4"
+                                    class="relative w-24 h-24 rounded-full">
+                            </div>
+                            <h3 class="text-lg text-cyan-400 font-semibold mb-2">María López</h3>
+                            <p class="text-gray-600 text-sm text-center mb-4">
+                                "No puedo creer lo fácil que es organizar partidos y torneos con FABO. ¡Es genial!"
+                            </p>
+                            <div class="flex justify-center space-x-1 text-yellow-500">
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                            </div>
+                        </div>
+
+                        <!-- Tarjeta 5 -->
+                        <div
+                            class="p-10 rounded-lg shadow-lg w-80 min-h-[380px] flex flex-col items-center justify-between flex-shrink-0 snap-center bg-white border border-gray-300 max-w-xs mx-auto">
+                            <div class="relative w-24 h-24 mb-4">
+                                <div class="absolute inset-0 bg-cyan-200 rounded-full"></div>
+                                <img src="img/mujer-perfil.png" alt="Usuario 5" class="relative w-24 h-24 rounded-full">
+                            </div>
+                            <h3 class="text-lg text-cyan-400 font-semibold mb-2">Sofía Martínez</h3>
+                            <p class="text-gray-600 text-sm text-center mb-4">
+                                "¡FABO me ayudó a encontrar jugadores para mi equipo rápidamente!"
+                            </p>
+                            <div class="flex justify-center space-x-1 text-yellow-500">
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star_half</span>
+                            </div>
+                        </div>
+
+                        <!-- Tarjeta 6 -->
+                        <div
+                            class="p-10 rounded-lg shadow-lg w-80 min-h-[380px] flex flex-col items-center justify-between flex-shrink-0 snap-center bg-white border border-gray-300 max-w-xs mx-auto">
+                            <div class="relative w-24 h-24 mb-4">
+                                <div class="absolute inset-0 bg-cyan-200 rounded-full"></div>
+                                <img src="img/hombre-3.png" alt="Usuario 6" class="relative w-24 h-24 rounded-full">
+                            </div>
+                            <h3 class="text-lg text-cyan-400 font-semibold mb-2">Luis Fernández</h3>
+                            <p class="text-gray-600 text-sm text-center mb-4">
+                                "Gracias a FABO, organizar torneos es súper simple. ¡Me encanta!"
+                            </p>
+                            <div class="flex justify-center space-x-1 text-yellow-500">
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Controles del carrusel -->
+                    <button onclick="scrollCarruselIzquierda()"
+                        class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-blue-600 text-white p-3 rounded-full shadow-md hover:bg-blue-700 flex items-center justify-center w-10 h-10">
+                        <span class="material-icons text-xl">chevron_left</span>
+                    </button>
+                    <button onclick="scrollCarruselDerecha()"
+                        class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-blue-600 text-white p-3 rounded-full shadow-md hover:bg-blue-700 flex items-center justify-center w-10 h-10">
+                        <span class="material-icons text-xl">chevron_right</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- Sección de Preguntas Frecuentes -->
+        <section id="preguntas-frecuentes" class="bg-white py-16 px-6">
+            <div class="max-w-6xl mx-auto">
+                <!-- Título -->
+                <h2 class="text-3xl font-semibold text-center mb-10">Preguntas frecuentes</h2>
+                <p class="text-gray-600 mt-4 hidden text-center mb-8">Resolvemos tus dudas más comunes sobre FABO</p>
+                <!-- Contenedor de preguntas -->
+                <div class="space-y-6">
+                    <!-- Card 1 -->
+                    <div class="bg-cyan-200 p-6 rounded-2xl">
+                        <div class="flex justify-between items-center cursor-pointer" onclick="toggleAnswer(this)">
+                            <div class="flex items-center gap-4">
+                                <div class="text-black text-3xl font-bold">Q</div>
+                                <h3 class="text-lg font-semibold text-black">¿Puedo organizar mis propios partidos?</h3>
+                            </div>
+                            <div class="text-black">
+                                <span class="material-icons transition-transform duration-300">expand_more</span>
+                            </div>
+                        </div>
+                        <p class="text-black mt-4 hidden">¡Sí! Con FABO puedes crear y gestionar tus propios encuentros
+                            deportivos.</p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="bg-red-50 p-6 rounded-2xl">
+                        <div class="flex justify-between items-center cursor-pointer" onclick="toggleAnswer(this)">
+                            <div class="flex items-center gap-4">
+                                <div class="text-black text-3xl font-bold">Q</div>
+                                <h3 class="text-lg font-semibold text-black">¿Es gratis usar FABO?</h3>
+                            </div>
+                            <div class="text-black">
+                                <span class="material-icons transition-transform duration-300">expand_more</span>
+                            </div>
+                        </div>
+                        <p class="text-black mt-4 hidden">Sí, FABO es completamente gratuita, solo pagas el precio del
+                            partido que te uniste.</p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="bg-red-50 p-6 rounded-2xl">
+                        <div class="flex justify-between items-center cursor-pointer" onclick="toggleAnswer(this)">
+                            <div class="flex items-center gap-4">
+                                <div class="text-black text-3xl font-bold">Q</div>
+                                <h3 class="text-lg font-semibold text-black">¿Cómo puedo organizar un partido?</h3>
+                            </div>
+                            <div class="text-black">
+                                <span class="material-icons transition-transform duration-300">expand_more</span>
+                            </div>
+                        </div>
+                        <p class="text-black mt-4 hidden">Solo necesitas registrarte, crear un partido desde la app y
+                            compartirlo con los usuarios o directamente unirte a un partido ya creado.</p>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="bg-red-50 p-6 rounded-2xl">
+                        <div class="flex justify-between items-center cursor-pointer" onclick="toggleAnswer(this)">
+                            <div class="flex items-center gap-4">
+                                <div class="text-black text-3xl font-bold">Q</div>
+                                <h3 class="text-lg font-semibold text-black">¿Qué pasa si se cancela un partido?</h3>
+                            </div>
+                            <div class="text-black">
+                                <span class="material-icons transition-transform duration-300">expand_more</span>
+                            </div>
+                        </div>
+                        <p class="text-black mt-4 hidden">Si el organizador cancela un partido, todos los participantes
+                            inscritos recibirán un reembolso completo del monto pagado en un plazo máximo de 5 días
+                            hábiles.
+                            El reembolso se procesará a través del mismo medio de pago utilizado al momento de la
+                            inscripción.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="cta-section" class="py-20 bg-white">
+            <div class="container mx-auto max-w-7xl px-6 grid grid-cols-1 md:grid-cols-2 items-center gap-8">
+                <!-- Columna Izquierda -->
+                <div class="text-left">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-4">Sumate a la APP del Campeón <span
+                            class="text-cyan-400">FABO</span></h2>
+                    <h3 class="text-2xl font-semibold text-gray-600 mb-4">¡Descárgala gratis!</h3>
+                    <p class="text-gray-600 mb-6">
+                        Con FABO, encontrarás partidos de Fútbol, Básquet y Tenis cerca de ti. Conecta con otros
+                        jugadores,
+                        organiza tus encuentros y vive la pasión del deporte como nunca antes.
+                    </p>
+                    <a href="https://fabo.vercel.app" target="_blank"
+                        class="inline-block bg-cyan-500 text-white py-3 px-6 rounded-lg shadow-md hover:bg-cyan-400 transition">
+                        Descargar FABO
+                    </a>
+                </div>
+
+                <!-- Columna Derecha (oculta en móviles) -->
+                <div class="relative flex justify-center items-center h-[500px] hidden sm:block">
+                    <!-- Imagen del Círculo -->
+                    <img src="img/circulo-celeste.png" alt="Círculo decorativo" class="absolute max-w-full h-auto"
+                        style="bottom: -18%; left: 44%; transform: translateX(-50%);">
+
+                    <!-- Imagen Principal -->
+                    <img src="img/ginobili.png" alt="Imagen principal" class="absolute max-w-full h-auto"
+                        style="bottom: -16%; left: 50%; transform: translateX(-50%);">
+                </div>
+            </div>
+        </section>
+
+        <!-- Botón de volver al inicio -->
+        <button id="volverArriba"
+            class="fixed bottom-6 right-6 bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 focus:outline-none hidden">
+            <span class="material-icons">arrow_upward</span>
+        </button>
+    </main>
+    <footer class="bg-cyan-400 text-white py-10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Columna 1: Sobre nosotros -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Sobre Nosotros</h3>
+                    <p>En FABO, conectamos a los amantes del deporte para organizar partidos, torneos y eventos de forma
+                        sencilla. ¡Únete a nuestra comunidad!</p>
+                </div>
+                <!-- Columna 2: Enlaces rápidos -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Enlaces Rápidos</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#inicio" class="hover:text-gray-300 transition-colors">Inicio</a></li>
+                        <li><a href="#deportes" class="hover:text-gray-300 transition-colors">Deportes</a></li>
+                        <li><a href="#beneficos" class="hover:text-gray-300 transition-colors">Beneficios</a></li>
+                        <li><a href="#funcionalidades" class="hover:text-gray-300 transition-colors">Funcionalidades</a>
+                        </li>
+                        <li><a href="#testimonios" class="hover:text-gray-300 transition-colors">Testimonios</a></li>
+                    </ul>
+                </div>
+                <!-- Columna 3: Síguenos -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Síguenos</h3>
+                    <p class="mb-4">Conecta con nosotros en nuestras redes sociales:</p>
+                    <div class="flex space-x-4">
+                        <!-- Instagram -->
+                        <a href="#" class="hover:text-gray-300 transition-colors">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.75 2h8.5a5.75 5.75 0 015.75 5.75v8.5a5.75 5.75 0 01-5.75 5.75h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2z" />
+                                <path d="M16.5 11.37a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0z" />
+                                <path d="M17.5 6.5h.01" />
+                            </svg>
+                        </a>
+                        <!-- X -->
+                        <a href="#" class="hover:text-gray-300 transition-colors">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M24 4.557a9.956 9.956 0 01-2.828.775A4.932 4.932 0 0023.337 3.1a9.865 9.865 0 01-3.127 1.195 4.916 4.916 0 00-8.36 4.482A13.938 13.938 0 011.67 3.149a4.916 4.916 0 001.523 6.56A4.902 4.902 0 01.965 9.45v.062a4.916 4.916 0 003.946 4.827 4.996 4.996 0 01-2.213.084 4.924 4.924 0 004.601 3.417A9.863 9.863 0 010 20.44a13.927 13.927 0 007.548 2.212c9.05 0 14.002-7.496 14.002-13.986 0-.213-.005-.425-.015-.636A9.936 9.936 0 0024 4.557z" />
+                            </svg>
+                        </a>
+                        <!-- GitHub -->
+                        <a href="https://github.com" class="hover:text-gray-300 transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 2.296c-5.4 0-9.8 4.4-9.8 9.8 0 4.335 2.807 8.01 6.7 9.3.487.1.67-.208.67-.463 0-.23-.009-.84-.013-1.65-2.728.593-3.303-1.316-3.303-1.316-.443-1.128-1.08-1.43-1.08-1.43-.88-.6.067-.588.067-.588 1.013.073 1.547 1.04 1.547 1.04.87 1.497 2.283 1.064 2.84.814.087-.63.34-1.064.618-1.31-2.176-.247-4.466-1.088-4.466-4.845 0-1.07.383-1.947 1.01-2.63-.1-.247-.44-1.247.1-2.6 0 0 .83-.27 2.72 1.03.8-.223 1.65-.333 2.5-.338.85.005 1.7.115 2.5.337 1.88-1.3 2.71-1.03 2.71-1.03.54 1.353.2 2.353.1 2.6.63.683 1.01 1.56 1.01 2.63 0 3.765-2.29 4.594-4.47 4.836.35.3.66.887.66 1.78 0 1.29-.01 2.32-.01 2.64 0 .26.18.57.68.47 3.89-1.3 6.7-4.97 6.7-9.3 0-5.4-4.4-9.8-9.8-9.8z" />
+                            </svg>
+                        </a>
+                        <!-- YouTube -->
+                        <a href="https://youtube.com" class="hover:text-gray-300 transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M23.498 6.186a2.85 2.85 0 00-2.002-2.012C19.457 3.567 12 3.567 12 3.567s-7.457 0-9.496.607a2.85 2.85 0 00-2.002 2.012A29.54 29.54 0 000 12a29.54 29.54 0 00.502 5.814 2.85 2.85 0 002.002 2.012C4.543 20.433 12 20.433 12 20.433s7.457 0 9.496-.607a2.85 2.85 0 002.002-2.012A29.54 29.54 0 0024 12a29.54 29.54 0 00-.502-5.814zM9.75 15.5v-7l6.75 3.5-6.75 3.5z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Línea divisoria -->
+            <div class="border-t border-white mt-10"></div>
+            <!-- Pie de página -->
+            <div class="flex flex-col md:flex-row justify-between items-center mt-6 text-sm">
+                <p>&copy; 2025 FABO. Todos los derechos reservados.</p>
+                <p>
+                    <a href="#" class="hover:text-gray-300 transition-colors">Política de Privacidad</a> |
+                    <a href="#" class="hover:text-gray-300 transition-colors">Términos de Servicio</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
